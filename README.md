@@ -1,1 +1,1 @@
-This is a basic hospital website which is developed using HTML, CSS and JavaScript
+This is a fully responsive hospital website which is developed using HTML, CSS and JavaScript.

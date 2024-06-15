@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An Online Solution For Health Services">
+    <meta name="keywords" content="Health, Medicine, Surgery, Diagnosis">
+    <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat&family=Open+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&family=Ubuntu:wght@300;400;700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>E-ment</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navmenu">
+                <span class="brand-name">E-Ment</span>
+                <ul>
+                    <li>
+                        <a href="./index.html" aria-label="home-page-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#service-section" aria-label="service-page-link">Product</a>
+                    </li>
+                    <li>
+                        <a href="#pricing-section" aria-label="pricing-page-link">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#footer-section" aria-label="contact-page-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-btn-container">
+                <button class="quote-btn">
+                    Get Quote Now
+                    <i class="fa fa-arrow-right"></i>
+                </button>
+                <button class="hamburger-menu-btn" aria-label="hamburger-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <button class="theme-btn" onclick="toggleTheme()">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+            </div>
+        </nav>
+        <div class="hamburger-menu">
+            <ul>
+                <li>
+                    <a href="./index.html" aria-label="home-page-link">Home</a>
+                </li>
+                <li>
+                    <a href="#service-section" aria-label="service-page-link">Product</a>
+                </li>
+                <li>
+                    <a href="#pricing-section" aria-label="pricing-page-link">Pricing</a>
+                </li>
+                <li>
+                    <a href="#footer-section" aria-label="contact-page-link">Contact</a>
+                </li>
+                <li>
+                    <button class="hamburger-theme-btn" onclick="toggleTheme()">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <section class="hero-section">
+            <div class="intro-section">
+                <h1>Meet the Best Hospital</h1>
+                <p>We know how large objects will act, but things on a small scale.</p>
+                <div class="intro-btn-container">
+                    <button class="btn-1">Get Quote Now</button>
+                    <button class="btn-2">Learn More</button>
+                </div>
+            </div>
+            <div class="form-container">
+                <div class="form-section">
+                    <h2>Book Appointment</h2>
+                    <form>
+                        <label for="username">Name &#42;</label>
+                        <br/>
+                        <input type="text" name="fullname" id="username" placeholder="Full Name &#42;"/>
+                        <br/>
+                        <label for="email">Email address &#42;</label>
+                        <br/>
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com"/>
+                        <br/>
+                        <label for="department">Department &#42;</label>
+                        <br/>
+                        <select name="department" id="department">
+                            <option value="please select">Please Select</option>
+                            <option value="medicine">Medicine</option>
+                            <option value="general-surgery">General Surgery</option>
+                        </select>
+                        <br/>
+                        <label for="time">Time &#42;</label>
+                        <br/>
+                        <select name="time" id="time">
+                            <option value="4:00">4:00 Available</option>
+                            <option value="5:00">5:00</option>
+                            <option value="6:00">6:00</option>
+                            <option value="7:00">7:00</option>
+                        </select>
+                        <br/>
+                        <input type="submit"/>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- service section -->
+        <section id="service-section">
+            <!-- heading -->
+            <h1 class="section-common-heading">Leading Medicine</h1>
+            <p class="section-common-para">Problems trying to resolve the conflict between</p>
+            <p class="section-common-para">the two major realms of Classical physics : Newtonian mechanics</p>
+            <div class="service-card-container">
+                <!-- card-1 -->
+                <div class="service-card" data-aos="fade-up">
+                    <div class="card-heading-box">
+                        <div>
+                            <i class="fa fa-users"></i>
+                        </div>
+                        <h3>Emergency Case</h3>
+                    </div>
+                    <div class="card-details-box">
+                        <ul>
+                            <li>The best products start with Figma</li>
+                            <li>Design with real data</li>
+                            <li>Lightning fast prototyping</li>
+                            <li>Fastest way to organize</li>
+                            <li>Work at the speed of thought.</li>
+                        </ul>
+                        <span>Learn More</span>
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-heading-box">
+                        <div>
+                            <i class="fa fa-users"></i>
+                        </div>
+                        <h3>Cancer Care</h3>
+                    </div>
+                    <div class="card-details-box">
+                        <ul>
+                            <li>The best products start with Figma</li>
+                            <li>Design with real data</li>
+                            <li>Lightning fast prototyping</li>
+                            <li>Fastest way to organize</li>
+                            <li>Work at the speed of thought.</li>
+                        </ul>
+                        <span>Learn More</span>
+                    </div>
+                </div>
+                <!-- card-3 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-heading-box">
+                        <div>
+                            <i class="fa fa-users"></i>
+                        </div>
+                        <h3>Health Queries</h3>
+                    </div>
+                    <div class="card-details-box">
+                        <ul>
+                            <li>The best products start with Figma</li>
+                            <li>Design with real data</li>
+                            <li>Lightning fast prototyping</li>
+                            <li>Fastest way to organize</li>
+                            <li>Work at the speed of thought.</li>
+                        </ul>
+                        <span>Learn More</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- review section -->
+        <section class="review-section">
+            <!-- heading -->
+            <h1 class="section-common-heading">Leading Medicine</h1>
+            <p class="section-common-para">Problems trying to resolve the conflict between</p>
+            <p class="section-common-para">the two major realms of Classical physics : Newtonian mechanics</p>
+            <div class="review-card-container">
+                <!-- card-1 -->
+                <div class="review-cards" data-aos="zoom-in">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <p>
+                        Slate helps you see how many more days you need to work to reach your financial goal.
+                    </p>
+                    <img src="images/user-1.png" alt="image of an user">
+                </div>
+                <!-- card-2 -->
+                <div class="review-cards" data-aos="zoom-in" data-aos-delay="150">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <p>
+                        Slate helps you see how many more days you need to work to reach your financial goal.
+                    </p>
+                    <img src="images/user-2.png" alt="image of an user">
+                </div>
+                <!-- card-3 -->
+                <div class="review-cards" data-aos="zoom-in"  data-aos-delay="250">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <p>
+                        Slate helps you see how many more days you need to work to reach your financial goal.
+                    </p>
+                    <img src="images/user-3.png" alt="image of an user">
+                </div>
+            </div>
+        </section>
+        <!-- FAQ section -->
+        <section class="FAQ-section">
+            <!-- heading -->
+            <h1 class="section-common-heading">FAQ</h1>
+            <p class="section-common-para">Problems trying to resolve the conflict between</p>
+            <p class="section-common-para">the two major realms of Classical physics : Newtonian mechanics</p>
+            <div class="FAQ-card-container">
+                <!-- card-1 -->
+                <div class="FAQ-cards" data-aos="zoom-in" data-aos-delay="150">
+                    <div>
+                        <i class="fa fa-angle-right"></i> &nbsp;
+                    </div> 
+                    <div>
+                        <h3>the quick fox jumps over the lazy dog</h3>
+                        <p>Things on a very small scale behave like nothing</p>
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div class="FAQ-cards" data-aos="zoom-in" data-aos-delay="150">
+                    <div>
+                        <i class="fa fa-angle-right"></i> &nbsp;
+                    </div> 
+                    <div>
+                        <h3>the quick fox jumps over the lazy dog</h3>
+                        <p>Things on a very small scale behave like nothing</p>
+                    </div>
+                </div>
+                <!-- card-3 -->
+                <div class="FAQ-cards" data-aos="zoom-in" data-aos-delay="150">
+                    <div>
+                        <i class="fa fa-angle-right"></i> &nbsp;
+                    </div> 
+                    <div>
+                        <h3>the quick fox jumps over the lazy dog</h3>
+                        <p>Things on a very small scale behave like nothing</p>
+                    </div>
+                </div>
+                <!-- card-4 -->
+                <div class="FAQ-cards" data-aos="zoom-in" data-aos-delay="150">
+                    <div>
+                        <i class="fa fa-angle-right"></i> &nbsp;
+                    </div> 
+                    <div>
+                        <h3>the quick fox jumps over the lazy dog</h3>
+                        <p>Things on a very small scale behave like nothing</p>
+                    </div>
+                </div>
+                <!-- card-5 -->
+                <div class="FAQ-cards" data-aos="zoom-in" data-aos-delay="150">
+                    <div>
+                        <i class="fa fa-angle-right"></i> &nbsp;
+                    </div> 
+                    <div>
+                        <h3>the quick fox jumps over the lazy dog</h3>
+                        <p>Things on a very small scale behave like nothing</p>
+                    </div>
+                </div>
+                <!-- card-6 -->
+                <div class="FAQ-cards" data-aos="zoom-in" data-aos-delay="150">
+                    <div>
+                        <i class="fa fa-angle-right"></i> &nbsp;
+                    </div> 
+                    <div>
+                        <h3>the quick fox jumps over the lazy dog</h3>
+                        <p>Things on a very small scale behave like nothing</p>
+                    </div>
+                </div>
+                <!-- card-7 -->
+                <div class="FAQ-cards" data-aos="zoom-in" data-aos-delay="150">
+                    <div>
+                        <i class="fa fa-angle-right"></i> &nbsp;
+                    </div> 
+                    <div>
+                        <h3>the quick fox jumps over the lazy dog</h3>
+                        <p>Things on a very small scale behave like nothing</p>
+                    </div>
+                </div>
+                <!-- card-8 -->
+                <div class="FAQ-cards" data-aos="zoom-in" data-aos-delay="150">
+                    <div>
+                        <i class="fa fa-angle-right"></i> &nbsp;
+                    </div> 
+                    <div>
+                        <h3>the quick fox jumps over the lazy dog</h3>
+                        <p>Things on a very small scale behave like nothing</p>
+                    </div>
+                </div>
+                <!-- card-9 -->
+                <div class="FAQ-cards" data-aos="zoom-in" data-aos-delay="150">
+                    <div>
+                        <i class="fa fa-angle-right"></i> &nbsp;
+                    </div> 
+                    <div>
+                        <h3>the quick fox jumps over the lazy dog</h3>
+                        <p>Things on a very small scale behave like nothing</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- pricing section -->
+        <section id="pricing-section">
+            <!-- heading -->
+            <h1 class="section-common-heading">Pricing</h1>
+            <p class="section-common-para">Problems trying to resolve the conflict between</p>
+            <p class="section-common-para">the two major realms of Classical physics : Newtonian mechanics</p>
+            <div class="pricing-card-container">
+                <!-- card-1 -->
+                <div class="card-free" data-aos="flip-left" data-aos-delay="300" data-aos-easing="ease-out-cubic">
+                    <h2>FREE</h2>
+                    <p class="card-free-para">Organize across all apps by hand</p>
+                    <div class="price-tag">
+                        <h1>0</h1>
+                        <div>
+                            <span>$</span>
+                            <p>Per Month</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                            <span>Unlimited product updates</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                            <span>Unlimited product updates</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                            <span>Unlimited product updates</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-check-circle" style="color: #BDBDBD;"></i>
+                            <span>1GB Cloud storage</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-check-circle" style="color: #BDBDBD;"></i>
+                            <span>community support</span>
+                        </li>
+                    </ul>
+                    <button>Try for free</button>
+                </div>
+                <!-- card-2 -->
+                <div class="card-free card-premium" data-aos="fade-up" data-aos-delay="300" data-aos-easing="ease-out-cubic">
+                    <h2>PREMIUM</h2>
+                    <p style="color: whitesmoke;">Organize across all apps by hand</p>
+                    <div class="price-tag">
+                        <h1>19.99</h1>
+                        <div>
+                            <span>$</span>
+                            <p>Per Month</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <i class="fa fa-check-circle standard-fa-icon"></i>
+                            <span>Unlimited product updates</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-check-circle  standard-fa-icon"></i>
+                            <span>Unlimited product updates</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-check-circle  standard-fa-icon"></i>
+                            <span>Unlimited product updates</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-check-circle  standard-fa-icon"></i>
+                            <span>1GB Cloud storage</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-check-circle  standard-fa-icon"></i>
+                            <span>community support</span>
+                        </li>
+                    </ul>
+                    <button>Buy Now</button>
+                </div>
+                <!-- card-3 -->
+                <div class="card-free" data-aos="flip-right" data-aos-delay="300" data-aos-easing="ease-out-cubic">
+                    <h2>STANDARD</h2>
+                    <p>Organize across all apps by hand</p>
+                    <div class="price-tag">
+                        <h1>9.99</h1>
+                        <div>
+                            <span>$</span>
+                            <p>Per Month</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                            <span>Unlimited product updates</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                            <span>Unlimited product updates</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                            <span>Unlimited product updates</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                            <span>1GB Cloud storage</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                            <span>community support</span>                            
+                        </li>
+                    </ul>
+                    <button>Buy Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer-section">
+        <!-- Subscribe Section -->
+        <section class="subscribe-section">
+            <div class="footer-heading">
+                <h1>Get In Touch</h1>
+                <p>The gradual accumulation of information about atomic and small-scale behaviour during the first quarter of the 20th</p>
+            </div>
+            <form style="margin-top: -10px;">
+                <input type="email" name="email" placeholder="Your Email" id="subscribe-email"/>
+                <input type="submit" value="Subscribe" id="subscribe-btn"/>
+            </form>
+        </section>
+        <!-- About Section -->
+        <section class="about-section">
+            <!-- card-1 -->
+            <div class="about-section-cards">
+                <h2>Get In Touch</h2>
+                <p>the quick fox jumps over the lazy dog</p>
+                <i class="fa-brands fa-facebook-square" style="color: #23A6F0;font-size: 25px;cursor: pointer;"></i>
+                <i class="fa-brands fa-instagram" style="color: #23A6F0;font-size: 25px;margin: 0 20px;cursor: pointer;"></i>
+                <i class="fa-brands fa-twitter" style="color: #23A6F0;font-size: 25px;cursor: pointer;"></i>
+            </div>
+            <!-- card-2 -->
+            <div class="about-section-cards">
+                <h2>Company info</h2>
+                <ul>
+                    <li>About Us</li>
+                    <li>Carrier</li>
+                    <li>We are hiring</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            <!-- card-3 -->
+            <div class="about-section-cards">
+                <h2>Features</h2>
+                <ul>
+                    <li>Business Marketing</li>
+                    <li>User Analytic</li>
+                    <li>Live Chat</li>
+                    <li>Unlimited Support</li>
+                </ul>
+            </div>
+            <div class="about-section-cards">
+                <h2>Resources</h2>
+                <ul>
+                    <li>IOS & Andriod</li>
+                    <li>Watch a Demo</li>
+                    <li>Customers</li>
+                    <li>API</li>
+                </ul>
+            </div>
+        </section>
+        <!-- Credit Section -->
+        <section class="credit-section">
+            <h5>Made With Love By Figmaland All Right Reserved</h5>
+        </section>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const hamburgerMenuBtn = document.querySelector('.hamburger-menu-btn');
+        hamburgerMenuBtn.addEventListener("click", ()=>{
+            if (hamburgerMenuBtn.innerHTML === '<i class="fa-solid fa-bars"></i>') {
+                hamburgerMenuBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>'
+            } else {
+                hamburgerMenuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>'
+            }
+            if (hamburgerMenu.style.display === 'none') {
+                hamburgerMenu.style.display = 'flex'
+            } else {
+                hamburgerMenu.style.display = 'none'
+            }
+        })
+
+        function toggleTheme(){
+            const themeBtn = document.querySelector(".theme-btn")
+            const hamburgerThemeBtn = document.querySelector(".hamburger-theme-btn")
+            const root = document.querySelector(':root')
+            const bodyColor = getComputedStyle(root).getPropertyValue('--body-color');
+            const bgColor1 = getComputedStyle(root).getPropertyValue('--bg-color1');
+            const formBorderColor = getComputedStyle(root).getPropertyValue('--form-border-color');
+            const formBgColor = getComputedStyle(root).getPropertyValue('--form-bg-color');
+            const formInputColor = getComputedStyle(root).getPropertyValue('--form-input-color');
+            const formTextColor = getComputedStyle(root).getPropertyValue('--text-color3');
+            const textColor = getComputedStyle(root).getPropertyValue('--text-color1');
+            const paraColor = getComputedStyle(root).getPropertyValue('--para-color');
+
+            bodyColor === '#ffffff' ? root.style.setProperty('--body-color', '#27374D') : root.style.setProperty('--body-color', '#ffffff');
+
+            bgColor1 === '#f5f5f5' ? root.style.setProperty('--bg-color1', '#424769') : root.style.setProperty('--bg-color1', '#f5f5f5');
+
+            formBorderColor === '#ffffff' ? root.style.setProperty('--form-border-color', '#000000') : root.style.setProperty('--form-border-color', '#ffffff');
+
+            formBgColor === '#ffffff' ? root.style.setProperty('--form-bg-color', 'transparent') : root.style.setProperty('--form-bg-color', '#ffffff');
+
+            formInputColor === '#f5f5f5' ? root.style.setProperty('--form-input-color', 'transparent') : root.style.setProperty('--form-input-color', '#f5f5f5');
+
+            formTextColor === '#808080' ? root.style.setProperty('--text-color3', '#000000') : root.style.setProperty('--text-color3', '#808080');
+
+            textColor === '#ffffff' ? root.style.setProperty('--text-color1', '#000000') : root.style.setProperty('--text-color1', '#ffffff');
+            
+            paraColor === '#ffffff' ? root.style.setProperty('--para-color', '#808080') : root.style.setProperty('--para-color', '#ffffff');
+
+            if (themeBtn.innerHTML === '<i class="fa-solid fa-moon"></i>') {
+                themeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>'
+            } else {
+                themeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>'
+            }
+            if (hamburgerThemeBtn.innerHTML === '<i class="fa-solid fa-moon"></i>') {
+                hamburgerThemeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>'
+            } else {
+                hamburgerThemeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>'
+            }
+        }
+    </script>
+</body>
+</html>
